@@ -1,0 +1,13 @@
+[package]
+name = "actix_ngrok"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+anyhow = "1.0.81"
+axum = { version = "0.6.4", features = ["tokio"] }
+env_logger = "0.11.3"
+futures = "0.3.30"
+log = "0.4.21"
+ngrok = { version = "0.13.1", features = ["axum"] }
+tokio = { version = "1.37.0", features = ["rt-multi-thread", "macros"] }
